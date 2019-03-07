@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="subColor">#b8a789</color>
+    <color name="black">#FF000000</color>
+    <color name="subBlack">#FF231815</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="subTxtColor">#FF969696</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="mint">#66CDAA</color>
+    <color name="mint_deep">#20B2AA</color>
+</resources>

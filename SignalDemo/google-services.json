@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "131451691865",
+    "firebase_url": "https://signaldemo-eebd3.firebaseio.com",
+    "project_id": "signaldemo-eebd3",
+    "storage_bucket": "signaldemo-eebd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131451691865:android:fe6f5abc98afc748",
+        "android_client_info": {
+          "package_name": "deo.com.signaldemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131451691865-sk3ood0q76f1v08ip1divqut0hpl6g7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh5TM4D4uWaWZjRUS7yeUAZ4MPfcvLGtU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

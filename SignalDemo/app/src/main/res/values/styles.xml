@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mint</item>
+        <item name="colorPrimaryDark">@color/mint</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="buttonBarButtonStyle">@style/DialogButtonStyle</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <!--If minimum API level is greater than or equal to 23, you can define the color of Title text separately  -->
+        <!--<item name="android:titleTextColor">@SomeColor</item>-->
+    </style>
+
+    <style name="DialogButtonStyle" parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="mainModel"
+            type="deo.com.signaldemo.viewmodel.MainViewModel"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="deo.com.signaldemo.MainActivity">
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/topLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:contentInsetStart="0dp">-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingEnd="0dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="18sp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingStart="16dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="@string/friend_txt"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@color/black" />&ndash;&gt;-->
+
+        <!--</android.support.v7.widget.Toolbar>-->
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mint"
+            app:layout_constraintTop_toBottomOf="@id/topLayout"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimaryDark"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorPrimaryDark"
+            app:tabTextColor="#c9c9c9" />
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+            android:id="@+id/hrv"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/hrv">
+        </android.support.v4.view.ViewPager>
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/addFab"
+            android:layout_width="384dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            app:fab_addButtonColorNormal="@color/white"
+            app:fab_addButtonColorPressed="@color/colorPrimary"
+            app:fab_addButtonPlusIconColor="@color/colorAccent"
+            app:fab_addButtonSize="normal"
+            app:fab_addButtonStrokeVisible="false"
+            app:fab_expandDirection="up"
+            app:fab_labelStyle="@style/menu_labels_style"
+            app:fab_labelsPosition="left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/searchEmailFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{mainModel::fabListener}"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/colorAccent"
+                app:fab_icon="@drawable/ic_email_black_24dp"
+                app:fab_size="normal"
+                app:fab_title="@string/search_email" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/searchDeviceFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{mainModel::fabListener}"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/colorAccent"
+                app:fab_icon="@drawable/ic_bluetooth_device_black"
+                app:fab_size="normal"
+                app:fab_title="@string/search_device" />
+
+            <!--<com.getbase.floatingactionbutton.FloatingActionButton-->
+            <!--android:onClick="@{mainModel::fabListener}"-->
+            <!--android:id="@+id/searchNicknameFab"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:fab_colorNormal="@color/white"-->
+            <!--app:fab_icon="@drawable/ic_person_black_24dp"-->
+            <!--app:fab_title="@string/search_nickname"-->
+            <!--app:fab_colorPressed="@color/colorAccent"-->
+            <!--app:fab_size="normal"/>-->
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </android.support.constraint.ConstraintLayout>
+</layout>
